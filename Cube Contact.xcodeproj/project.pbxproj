@@ -9,24 +9,25 @@
 /* Begin PBXBuildFile section */
 		7D2EF88A287CECAD007FB6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF889287CECAD007FB6BC /* AppDelegate.swift */; };
 		7D2EF88C287CECAD007FB6BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF88B287CECAD007FB6BC /* SceneDelegate.swift */; };
-		7D2EF88E287CECAD007FB6BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF88D287CECAD007FB6BC /* ViewController.swift */; };
+		7D2EF88E287CECAD007FB6BC /* EmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF88D287CECAD007FB6BC /* EmployeeVC.swift */; };
 		7D2EF891287CECAD007FB6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF88F287CECAD007FB6BC /* Main.storyboard */; };
 		7D2EF893287CECAF007FB6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF892287CECAF007FB6BC /* Assets.xcassets */; };
 		7D2EF896287CECAF007FB6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF894287CECAF007FB6BC /* LaunchScreen.storyboard */; };
-		7D2EF8A1287CECAF007FB6BC /* Cube_ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8A0287CECAF007FB6BC /* Cube_ContactTests.swift */; };
-		7D2EF8AB287CECB0007FB6BC /* Cube_ContactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8AA287CECAF007FB6BC /* Cube_ContactUITests.swift */; };
-		7D2EF8AD287CECB0007FB6BC /* Cube_ContactUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8AC287CECB0007FB6BC /* Cube_ContactUITestsLaunchTests.swift */; };
+		7D2EF8A1287CECAF007FB6BC /* EmployeeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8A0287CECAF007FB6BC /* EmployeeViewModelTests.swift */; };
+		7D2EF8BA287CEFF2007FB6BC /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8B9287CEFF2007FB6BC /* EmployeeModel.swift */; };
+		7D2EF8C0287CFFFA007FB6BC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8BF287CFFFA007FB6BC /* NetworkManager.swift */; };
+		7D2EF8C3287DA5A6007FB6BC /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8C2287DA5A6007FB6BC /* EmployeeViewModel.swift */; };
+		7D2EF8C5287DB5C2007FB6BC /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8C4287DB5C2007FB6BC /* EmployeeCell.swift */; };
+		7D2EF8C8287E4A56007FB6BC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8C7287E4A56007FB6BC /* String+Extension.swift */; };
+		7D2EF8CB287E8082007FB6BC /* Employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF8CA287E8081007FB6BC /* Employee.json */; };
+		7D2EF8CD287E80A5007FB6BC /* NoEmployee.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF8CC287E80A5007FB6BC /* NoEmployee.json */; };
+		7D2EF8D0287E80ED007FB6BC /* EmployeesMalformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF8CF287E80ED007FB6BC /* EmployeesMalformed.json */; };
+		7D2EF8D2287F6A71007FB6BC /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8D1287F6A71007FB6BC /* URLSession+Extension.swift */; };
+		7D2EF8D4287F756E007FB6BC /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF8D3287F756E007FB6BC /* URLBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7D2EF89D287CECAF007FB6BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7D2EF87E287CECAD007FB6BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D2EF885287CECAD007FB6BC;
-			remoteInfo = "Cube Contact";
-		};
-		7D2EF8A7287CECAF007FB6BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7D2EF87E287CECAD007FB6BC /* Project object */;
 			proxyType = 1;
@@ -39,16 +40,23 @@
 		7D2EF886287CECAD007FB6BC /* Cube Contact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cube Contact.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2EF889287CECAD007FB6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D2EF88B287CECAD007FB6BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D2EF88D287CECAD007FB6BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D2EF88D287CECAD007FB6BC /* EmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVC.swift; sourceTree = "<group>"; };
 		7D2EF890287CECAD007FB6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D2EF892287CECAF007FB6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D2EF895287CECAF007FB6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D2EF897287CECAF007FB6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D2EF89C287CECAF007FB6BC /* Cube ContactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cube ContactTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2EF8A0287CECAF007FB6BC /* Cube_ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube_ContactTests.swift; sourceTree = "<group>"; };
-		7D2EF8A6287CECAF007FB6BC /* Cube ContactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cube ContactUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D2EF8AA287CECAF007FB6BC /* Cube_ContactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube_ContactUITests.swift; sourceTree = "<group>"; };
-		7D2EF8AC287CECB0007FB6BC /* Cube_ContactUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube_ContactUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D2EF8A0287CECAF007FB6BC /* EmployeeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModelTests.swift; sourceTree = "<group>"; };
+		7D2EF8B9287CEFF2007FB6BC /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		7D2EF8BF287CFFFA007FB6BC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7D2EF8C2287DA5A6007FB6BC /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		7D2EF8C4287DB5C2007FB6BC /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		7D2EF8C7287E4A56007FB6BC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		7D2EF8CA287E8081007FB6BC /* Employee.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Employee.json; sourceTree = "<group>"; };
+		7D2EF8CC287E80A5007FB6BC /* NoEmployee.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NoEmployee.json; sourceTree = "<group>"; };
+		7D2EF8CF287E80ED007FB6BC /* EmployeesMalformed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeesMalformed.json; sourceTree = "<group>"; };
+		7D2EF8D1287F6A71007FB6BC /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		7D2EF8D3287F756E007FB6BC /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D2EF8A3287CECAF007FB6BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +82,6 @@
 			children = (
 				7D2EF888287CECAD007FB6BC /* Cube Contact */,
 				7D2EF89F287CECAF007FB6BC /* Cube ContactTests */,
-				7D2EF8A9287CECAF007FB6BC /* Cube ContactUITests */,
 				7D2EF887287CECAD007FB6BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +91,6 @@
 			children = (
 				7D2EF886287CECAD007FB6BC /* Cube Contact.app */,
 				7D2EF89C287CECAF007FB6BC /* Cube ContactTests.xctest */,
-				7D2EF8A6287CECAF007FB6BC /* Cube ContactUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +98,13 @@
 		7D2EF888287CECAD007FB6BC /* Cube Contact */ = {
 			isa = PBXGroup;
 			children = (
+				7D2EF8C6287E4A45007FB6BC /* Extensions */,
+				7D2EF8BE287CF40E007FB6BC /* Networking */,
+				7D2EF8BD287CF408007FB6BC /* View */,
+				7D2EF8BC287CF3F5007FB6BC /* ViewModel */,
+				7D2EF8BB287CF3EF007FB6BC /* Model */,
 				7D2EF889287CECAD007FB6BC /* AppDelegate.swift */,
 				7D2EF88B287CECAD007FB6BC /* SceneDelegate.swift */,
-				7D2EF88D287CECAD007FB6BC /* ViewController.swift */,
-				7D2EF88F287CECAD007FB6BC /* Main.storyboard */,
 				7D2EF892287CECAF007FB6BC /* Assets.xcassets */,
 				7D2EF894287CECAF007FB6BC /* LaunchScreen.storyboard */,
 				7D2EF897287CECAF007FB6BC /* Info.plist */,
@@ -113,18 +115,72 @@
 		7D2EF89F287CECAF007FB6BC /* Cube ContactTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D2EF8A0287CECAF007FB6BC /* Cube_ContactTests.swift */,
+				7D2EF8C9287E8024007FB6BC /* MockJSON */,
+				7D2EF8A0287CECAF007FB6BC /* EmployeeViewModelTests.swift */,
 			);
 			path = "Cube ContactTests";
 			sourceTree = "<group>";
 		};
-		7D2EF8A9287CECAF007FB6BC /* Cube ContactUITests */ = {
+		7D2EF8BB287CF3EF007FB6BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7D2EF8AA287CECAF007FB6BC /* Cube_ContactUITests.swift */,
-				7D2EF8AC287CECB0007FB6BC /* Cube_ContactUITestsLaunchTests.swift */,
+				7D2EF8B9287CEFF2007FB6BC /* EmployeeModel.swift */,
 			);
-			path = "Cube ContactUITests";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D2EF8BC287CF3F5007FB6BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF8C2287DA5A6007FB6BC /* EmployeeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7D2EF8BD287CF408007FB6BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF8C1287DA4BC007FB6BC /* Cell */,
+				7D2EF88D287CECAD007FB6BC /* EmployeeVC.swift */,
+				7D2EF88F287CECAD007FB6BC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D2EF8BE287CF40E007FB6BC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF8BF287CFFFA007FB6BC /* NetworkManager.swift */,
+				7D2EF8D3287F756E007FB6BC /* URLBuilder.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7D2EF8C1287DA4BC007FB6BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF8C4287DB5C2007FB6BC /* EmployeeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7D2EF8C6287E4A45007FB6BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF8C7287E4A56007FB6BC /* String+Extension.swift */,
+				7D2EF8D1287F6A71007FB6BC /* URLSession+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D2EF8C9287E8024007FB6BC /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF8CA287E8081007FB6BC /* Employee.json */,
+				7D2EF8CC287E80A5007FB6BC /* NoEmployee.json */,
+				7D2EF8CF287E80ED007FB6BC /* EmployeesMalformed.json */,
+			);
+			path = MockJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +221,6 @@
 			productReference = 7D2EF89C287CECAF007FB6BC /* Cube ContactTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7D2EF8A5287CECAF007FB6BC /* Cube ContactUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D2EF8B6287CECB0007FB6BC /* Build configuration list for PBXNativeTarget "Cube ContactUITests" */;
-			buildPhases = (
-				7D2EF8A2287CECAF007FB6BC /* Sources */,
-				7D2EF8A3287CECAF007FB6BC /* Frameworks */,
-				7D2EF8A4287CECAF007FB6BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D2EF8A8287CECAF007FB6BC /* PBXTargetDependency */,
-			);
-			name = "Cube ContactUITests";
-			productName = "Cube ContactUITests";
-			productReference = 7D2EF8A6287CECAF007FB6BC /* Cube ContactUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +235,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					7D2EF89B287CECAF007FB6BC = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 7D2EF885287CECAD007FB6BC;
-					};
-					7D2EF8A5287CECAF007FB6BC = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 7D2EF885287CECAD007FB6BC;
 					};
@@ -221,7 +255,6 @@
 			targets = (
 				7D2EF885287CECAD007FB6BC /* Cube Contact */,
 				7D2EF89B287CECAF007FB6BC /* Cube ContactTests */,
-				7D2EF8A5287CECAF007FB6BC /* Cube ContactUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D2EF8A4287CECAF007FB6BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7D2EF8CD287E80A5007FB6BC /* NoEmployee.json in Resources */,
+				7D2EF8CB287E8082007FB6BC /* Employee.json in Resources */,
+				7D2EF8D0287E80ED007FB6BC /* EmployeesMalformed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2EF88E287CECAD007FB6BC /* ViewController.swift in Sources */,
+				7D2EF88E287CECAD007FB6BC /* EmployeeVC.swift in Sources */,
+				7D2EF8BA287CEFF2007FB6BC /* EmployeeModel.swift in Sources */,
+				7D2EF8C5287DB5C2007FB6BC /* EmployeeCell.swift in Sources */,
+				7D2EF8C0287CFFFA007FB6BC /* NetworkManager.swift in Sources */,
 				7D2EF88A287CECAD007FB6BC /* AppDelegate.swift in Sources */,
+				7D2EF8D4287F756E007FB6BC /* URLBuilder.swift in Sources */,
+				7D2EF8D2287F6A71007FB6BC /* URLSession+Extension.swift in Sources */,
+				7D2EF8C3287DA5A6007FB6BC /* EmployeeViewModel.swift in Sources */,
+				7D2EF8C8287E4A56007FB6BC /* String+Extension.swift in Sources */,
 				7D2EF88C287CECAD007FB6BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,16 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D2EF8A1287CECAF007FB6BC /* Cube_ContactTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D2EF8A2287CECAF007FB6BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D2EF8AD287CECB0007FB6BC /* Cube_ContactUITestsLaunchTests.swift in Sources */,
-				7D2EF8AB287CECB0007FB6BC /* Cube_ContactUITests.swift in Sources */,
+				7D2EF8A1287CECAF007FB6BC /* EmployeeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +315,6 @@
 			isa = PBXTargetDependency;
 			target = 7D2EF885287CECAD007FB6BC /* Cube Contact */;
 			targetProxy = 7D2EF89D287CECAF007FB6BC /* PBXContainerItemProxy */;
-		};
-		7D2EF8A8287CECAF007FB6BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D2EF885287CECAD007FB6BC /* Cube Contact */;
-			targetProxy = 7D2EF8A7287CECAF007FB6BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -437,6 +459,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B76MH49FK6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cube Contact/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B76MH49FK6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cube Contact/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -522,40 +546,6 @@
 			};
 			name = Release;
 		};
-		7D2EF8B7287CECB0007FB6BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ryanofori.Cube-ContactUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Cube Contact";
-			};
-			name = Debug;
-		};
-		7D2EF8B8287CECB0007FB6BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ryanofori.Cube-ContactUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Cube Contact";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +572,6 @@
 			buildConfigurations = (
 				7D2EF8B4287CECB0007FB6BC /* Debug */,
 				7D2EF8B5287CECB0007FB6BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D2EF8B6287CECB0007FB6BC /* Build configuration list for PBXNativeTarget "Cube ContactUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D2EF8B7287CECB0007FB6BC /* Debug */,
-				7D2EF8B8287CECB0007FB6BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
