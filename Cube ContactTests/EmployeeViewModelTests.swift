@@ -11,13 +11,46 @@ import XCTest
 class EmployeeViewModelTests: XCTestCase {
     
     var employeeViewModel = EmployeeViewModel()
-
+    
+    var systemUnderTest: EmployeeModel!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let data = try getData(fromJSON: "Employees")
+        systemUnderTest = try JSONDecoder().decode(EmployeeModel.self, from: data)
     }
+    
+    func testShowJSON() throws -> Void {
+        
+        let firstEmplyee = systemUnderTest.employees.first
+        XCTAssertEqual(firstEmplyee?.fullName, "Justine Mason")
+        XCTAssertEqual(firstEmplyee?.team, "Point of Sale")
+        let firstImage = "https://s3.amazonaws.com/sq-mobile-interview/photos/16c00560-6dd3-4af4-97a6-d4754e7f2394/small.jpg"
+        XCTAssertEqual(firstEmplyee?.photoURLSmall, firstImage)
+        
+//        let bundle = Bundle(for: type(of: self))
+//
+//        guard let employeePath = bundle.path(forResource: "Employees", ofType: "json") else {
+//            XCTFail("Missing file: Employees.json")
+//            return
+//        }
+//        print(employeePath.)
+//        print(type(of: employeePath))
+        
+//        guard let jsonData = employeePath.data(using: .utf8) else { return print("no data") }
+        
+//        do {
+//            let json = try JSONDecoder().decode(EmployeeModel.self, from: jsonData)
+//        } catch {
+////                NSLog(error.localizedDescription)
+//            print(error.localizedDescription)
+//        }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//        guard let jsonData = readLocalFile(forName: "Employees") else {return print("Do data here")}
+//        print("before")
+//        let employeeData2 = try JSONDecoder().decode(EmployeeModel.self, from: jsonData)
+//        print("catter")
+//        print(employeeData2.employees[0].fullName)
+//        XCTAssertEqual(employeeData2.employees[0].fullName, "Jsdohn")
     }
 
     func testExample() throws {
@@ -33,6 +66,53 @@ class EmployeeViewModelTests: XCTestCase {
 //        self.measure {
 //            // Put the code you want to measure the time of here.
 //        }
+    }
+    
+    func localFileToData(filename name: String) -> Data? {
+        let bundle = Bundle(for: type(of: self))
+        do {
+            if let bundlePath = bundle.path(forResource: name, ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                    return jsonData
+                }
+        } catch {
+            print(error.localizedDescription)
+            print("Cannot find filename \(name)")
+        }
+        return nil
+    }
+    
+    private func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        
+        return nil
+    }
+    
+    func getData(fromJSON fileName: String) throws -> Data {
+      let bundle = Bundle(for: type(of: self))
+      guard let url = bundle.url(forResource: fileName, withExtension: "json") else {
+        XCTFail("Missing File: \(fileName).json")
+//        throw Error.fileNotFound
+          return Data()
+      }
+      do {
+        let data = try Data(contentsOf: url)
+        return data
+      } catch {
+        throw error
+      }
+    }
+    override func tearDownWithError() throws {
+        systemUnderTest = nil
+        super.tearDown()
     }
 
 }
