@@ -10,6 +10,6 @@ import UIKit
 class EmployeeCell: UITableViewCell {
     
     @IBOutlet weak var photoImage: UIImageView?
-    @IBOutlet weak var nameText: UILabel?
+    @IBOutlet weak var fullNameText: UILabel?
     @IBOutlet weak var teamText: UILabel?
 }

@@ -15,42 +15,27 @@ class EmployeeViewModelTests: XCTestCase {
     var systemUnderTest: EmployeeModel!
     
     override func setUpWithError() throws {
-        let data = try getData(fromJSON: "Employees")
-        systemUnderTest = try JSONDecoder().decode(EmployeeModel.self, from: data)
+
     }
     
-    func testShowJSON() throws -> Void {
-        
+    func testFirstEmployee() throws -> Void {
+        let data = try getData(fromJSON: "Employees")
+        systemUnderTest = try JSONDecoder().decode(EmployeeModel.self, from: data)
         let firstEmplyee = systemUnderTest.employees.first
         XCTAssertEqual(firstEmplyee?.fullName, "Justine Mason")
         XCTAssertEqual(firstEmplyee?.team, "Point of Sale")
         let firstImage = "https://s3.amazonaws.com/sq-mobile-interview/photos/16c00560-6dd3-4af4-97a6-d4754e7f2394/small.jpg"
         XCTAssertEqual(firstEmplyee?.photoURLSmall, firstImage)
-        
-//        let bundle = Bundle(for: type(of: self))
-//
-//        guard let employeePath = bundle.path(forResource: "Employees", ofType: "json") else {
-//            XCTFail("Missing file: Employees.json")
-//            return
-//        }
-//        print(employeePath.)
-//        print(type(of: employeePath))
-        
-//        guard let jsonData = employeePath.data(using: .utf8) else { return print("no data") }
-        
-//        do {
-//            let json = try JSONDecoder().decode(EmployeeModel.self, from: jsonData)
-//        } catch {
-////                NSLog(error.localizedDescription)
-//            print(error.localizedDescription)
-//        }
-
-//        guard let jsonData = readLocalFile(forName: "Employees") else {return print("Do data here")}
-//        print("before")
-//        let employeeData2 = try JSONDecoder().decode(EmployeeModel.self, from: jsonData)
-//        print("catter")
-//        print(employeeData2.employees[0].fullName)
-//        XCTAssertEqual(employeeData2.employees[0].fullName, "Jsdohn")
+    }
+    
+    func testNoEmployees() throws -> Void {
+        let data = try getData(fromJSON: "NoEmployee")
+        systemUnderTest = try JSONDecoder().decode(EmployeeModel.self, from: data)
+        let firstEmplyee = systemUnderTest.employees.first
+        XCTAssertNil(firstEmplyee?.fullName)
+        XCTAssertNil(firstEmplyee?.team)
+        let firstImage = "https://s3.amazonaws.com/sq-mobile-interview/photos/16c00560-6dd3-4af4-97a6-d4754e7f2394/small.jpg"
+        XCTAssertNil(firstEmplyee?.photoURLSmall)
     }
 
     func testExample() throws {

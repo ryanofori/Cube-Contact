@@ -6,25 +6,25 @@
 //
 
 import Foundation
+import UIKit
 class EmployeeViewModel {
     var employees = [Employee]()
-    var pullToRefreshTxt = ["Please pull to refresh"]
+    var refreshPrompt: [String]? = ["Check connection", "When connected to refrsh button"]
+    var isLoading: Bool = false
     
     func getEmployees(urlString: String, _ completed: @escaping () -> Void) {
-        NetworkManager.shared.getData(urlString: urlString) { data in
+        NetworkManager.shared.getData(urlString: urlString) { [weak self] data in
             let jsonDecoder = JSONDecoder()
             do {
                 let json = try jsonDecoder.decode(EmployeeModel.self, from: data)
-                print(type(of: json))
-//                print(json.employees[0].biography)
-                self.employees = json.employees
+                self?.employees = json.employees
                 completed()
             } catch {
-//                NSLog(error.localizedDescription)
                 print(error.localizedDescription)
             }
         }
     }
+    
     
     
 }

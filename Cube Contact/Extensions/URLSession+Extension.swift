@@ -11,7 +11,10 @@ extension URLSession {
         guard let url = URL(string: urlString) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        let task = self.dataTask(with: request) {data, response, error in
+        let task = self.dataTask(with: request) {data, _, error in
+            guard let error = error else {
+                return completion(.failure(.failure))
+            }
             guard let data = data else { return completion(.failure(.badData)) }
             completion(.success(data))
         }
@@ -24,4 +27,5 @@ extension URLSession {
 }
 enum NetworkError: Error {
     case badData
+    case failure
 }
